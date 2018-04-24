@@ -49,6 +49,9 @@ Based on the [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) 
   - eslint-plugin-jsx-a11y
   - eslint-plugin-react
 
+## How tos
+> WIP
+
 ## Bonus
 Eslint with prettier plugin config stolen from [WesBos](https://github.com/wesbos)'s [dotfiles](https://github.com/wesbos/dotfiles).  
 This avoids conflicts between Eslint and Prettier triyng to format the same code.  
