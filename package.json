@@ -1,0 +1,37 @@
+{
+  "name": "dev-pattern",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "moment": "^2.22.1",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.12.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.2.6",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm-run-all -p build-css build-js",
+    "build-js": "react-scripts build",
+    "start-js": "react-scripts start",
+    "watch-css": "stylus -w src/Styles/src -o src/Styles/dist",
+    "build-css": "stylus src/Styles/src -o src/Styles/dist",
+    "lint": "eslint . --ext .js --fix",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}
